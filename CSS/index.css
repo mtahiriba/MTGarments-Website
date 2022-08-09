@@ -1,0 +1,186 @@
+#background{
+    /* background-image: url("C:\\Users\\Muhamamd\\Desktop\\MTGarments\\background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% */
+    /* background-color: #cccccc; */
+    background-color:cadetblue;
+}
+
+.collapse1{
+    margin-left: 50%;
+}
+
+.nav-text{
+    margin-left: 5%;
+    font-size: 15px;
+    font-weight:500;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-text1{
+    margin-left: 8%;
+    font-size: 150%;
+    font-weight:bold;
+    text-decoration: none;
+    color:black
+}
+
+/* .navbar-fix{
+    position: fixed;
+    left: 0px;
+    top: 40px;
+    width: 100%;
+    background-color:chartreuse;
+} */
+
+.change-color{
+    color: rgb(225, 33, 33);
+}
+
+.collapse2{
+    margin-left: 20%;
+}
+
+.head-cont{
+    width: 85%;
+    height: 450px;
+    margin: 20px auto;
+    background-color: aqua;
+}
+
+.pic-cat{
+    width: 85%;
+    height: 250px;
+    /* margin: 20px auto; */
+    /* background-color: aqua; */
+}
+
+.divider{
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 32%;
+    height: 100%;
+    /* margin-left: 20px; */
+}
+
+.divider1{
+    float: left;
+}
+.divider2{
+    float: left;
+    margin: 0px 2%;
+}
+
+.products{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.product-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    opacity: 0.9;
+
+}
+
+.product-cat{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color:white;
+}
+
+.product-item{
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+}
+
+.product-item:hover{
+    border-bottom: 2px solid rgb(225, 33, 33);
+}
+
+.review{
+    width: 100%;
+    height: 550px;
+}
+
+.new-design{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(222, 222, 211);
+}
+
+.design-text{
+    width: 600px;
+    /* background-color: aquamarine; */
+    padding-top: 15%;
+    padding-left: 10%;
+}
+
+
+
+.discription{
+    width: 40%;
+    /* background-color: aqua; */
+    color: white;
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.discription p{
+    margin-top: 40px;
+    color:darkgray;
+}
+
+.contacti-info{
+    width: 40%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+    color: white;
+}
+
+.contacti-info li{
+    margin-bottom: 10px;
+}
+
+.contacti-info ul{
+    margin-top: 30px;
+}
+
+.contact-text{
+    color: darkgray;
+}
+
+.footer-line{
+    clear: both;
+    padding-top: 1%;
+}
+
+.footer-line hr{
+    color:darkgray;
+}
+
+.middle-line{
+    width: 85%;
+    margin: 25px auto;
+}
+
+.middle-line hr{
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
