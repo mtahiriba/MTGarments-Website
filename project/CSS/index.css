@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: 100% */
     /* background-color: #cccccc; */
-    background-color:cadetblue;
+    background-color:rgb(174, 218, 219);
 }
 
 .collapse1{
@@ -48,9 +48,8 @@
 
 .head-cont{
     width: 85%;
-    height: 450px;
+    height: 580px;
     margin: 20px auto;
-    background-color: aqua;
 }
 
 .pic-cat{
@@ -61,11 +60,8 @@
 }
 
 .divider{
-    background-color: blueviolet;
-    border: 2px solid black;
     width: 32%;
     height: 100%;
-    /* margin-left: 20px; */
 }
 
 .divider1{
@@ -74,6 +70,91 @@
 .divider2{
     float: left;
     margin: 0px 2%;
+}
+
+.cat-container{
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.MEN-Image{
+    width: 100%;
+    height: 100%;
+    background-image: url("..\\images\\MEN.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.MEN-Image:hover {  
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */ 
+    transform: scale(1.2);
+}
+
+.WOMEN-Image{
+    width: 100%;
+    height: 100%;
+    background-image: url("..\\images\\WOMEN.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.WOMEN-Image:hover {  
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */ 
+    transform: scale(1.2);
+}
+
+.KIDS-Image{
+    width: 100%;
+    height: 100%;
+    background-image: url("..\\images\\KIDS.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.KIDS-Image:hover {  
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */ 
+    transform: scale(1.2);
+}
+
+.cat-btn{
+    width: 30%;
+    height: 15%;
+    border: none;
+    background-color: white;
+    color: black;
+    margin-top: 45%;
+    margin-left: 35%;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.cat-btn:hover{
+    color: white;
+    background-color: rgb(225, 33, 33);
+    opacity: 1;
 }
 
 .products{
@@ -108,13 +189,44 @@
 
 .review{
     width: 100%;
-    height: 550px;
+    height: 500px;
+}
+
+.review-contant{
+    width: 60%;
+    height: 60%;
+    /* background-color: aqua; */
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: transparent;
+}
+
+.overlay::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+}
+
+.overlay h1{
+    color:white;
+    position: absolute;
+    text-align: center;
 }
 
 .new-design{
     width: 100%;
     height: 550px;
-    background-color: rgb(222, 222, 211);
+    background-color: rgb(241, 241, 234);
 }
 
 .design-text{
@@ -122,6 +234,18 @@
     /* background-color: aquamarine; */
     padding-top: 15%;
     padding-left: 10%;
+    float: left;
+}
+
+.design-image{
+    width: 500px;
+    height: 500px;
+    float: right;
+    background-image: url("..\\images\\design.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 3%;
+    margin-right: 5%;
 }
 
 
