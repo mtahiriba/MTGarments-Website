@@ -157,6 +157,28 @@
     opacity: 1;
 }
 
+
+.items-container{
+    width: 85%;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+.cont-height{
+    height: 400px;
+}
+
+.cont-height1{
+    height: 800px;
+}
+
+
+.cont-height2{
+    height: 1200px;
+}
+
+
 .products{
     text-align: center;
     padding-top: 40px;
