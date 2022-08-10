@@ -45,15 +45,40 @@ womencardlist = [
 
 mencardlist = [
     {
-        text: 'Formal Dress',
-        price: 8000,
-        image1: './images/first1.jpg',
+        text: 'Gray Suit',
+        price: 14999,
+        image1: './images/menfirst.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Pant',
+        price: 2999,
+        image1: './images/mensecond.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Black Shirt',
+        price: 3999,
+        image1: './images/menthird.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Black Trouser',
+        price: 5299,
+        image1: './images/mensix.jpg',
+        image2: './images/first2.jpg'
+    }
+    ,
+    {
+        text: 'Blue Coat',
+        price: 10999,
+        image1: './images/menfive.png',
         image2: './images/first2.jpg'
     },
     {
         text: 'Formal Shirt',
         price: 10000,
-        image1: './images/first1.jpg',
+        image1: './images/menfour.jpg',
         image2: './images/first2.jpg'
     }
 ]
