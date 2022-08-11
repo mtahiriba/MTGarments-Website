@@ -86,11 +86,67 @@ mencardlist = [
 
 kidscardlist = [
     {
-        text: 'Formal Dress',
-        price: 8000,
-        image1: './images/first1.jpg',
+        text: 'Pink Dress',
+        price: 7999,
+        image1: './images/kids1.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'New Black dress',
+        price: 4499,
+        image1: './images/kids7.jpg',
         image2: './images/first2.jpg'
     }
+    ,
+    {
+        text: 'Blue suit',
+        price: 5999,
+        image1: './images/kids3.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'New Dress',
+        price: 5399,
+        image1: './images/kids4.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Dress',
+        price: 6999,
+        image1: './images/kids5.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Dress',
+        price: 3299,
+        image1: './images/kids6.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Dress',
+        price: 3799,
+        image1: './images/kids8.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Dress',
+        price: 8999,
+        image1: './images/kids2.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Dress',
+        price: 5899,
+        image1: './images/kids9.jpg',
+        image2: './images/first2.jpg'
+    },
+    {
+        text: 'Formal Dress',
+        price: 4999,
+        image1: './images/kids10.jpg',
+        image2: './images/first2.jpg'
+    }
+    
 ]
 
 
@@ -223,3 +279,7 @@ buttons[1].addEventListener('click', women)
 buttons[2].addEventListener('click', kids)
 
 women()
+
+document.querySelector('.MEN-Image').addEventListener('click', men)
+document.querySelector('.WOMEN-Image').addEventListener('click', women)
+document.querySelector('.KIDS-Image').addEventListener('click', kids)

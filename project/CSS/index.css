@@ -216,11 +216,10 @@
 
 .review-contant{
     width: 60%;
-    height: 60%;
-    /* background-color: aqua; */
+    height: 80%;
     position: absolute;
     left: 20%;
-    top: 40%;
+    top: 15%;
 }
 
 
