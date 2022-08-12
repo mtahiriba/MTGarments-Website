@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+.button:hover{
+    background-color: rgb(226, 56, 56);;
+    color: white;
+    border: none;
+}
+a:hover{
+ color: red;
+}
+
+.frame {
+      height: 700px;
+      width: 550px;
+      overflow: hidden;
+    }
+    .zoomin img {
+      height: 700px;
+      width: 550px;
+      -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+    }
+    .zoomin img:hover {
+      width: 800px;
+      height: 900px;
+    }
+</style>
+ <meta charset=utf-8 />
+ <title>MTGarments</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+     <div class="zoomin frame" style=" float: left;margin-left: 30px;margin-top: 10px;">
+      <img src="D:\BSCS 6\WE\image\3.jpg" alt="..." style="display: inline; margin-bottom: 10px; ">
+     </div>
+
+   <div class="container" style="float:right ; width:700px ;margin-right: 130px;margin-top: 10px;">
+    <a href="#" style="color: black;">Home/</a>
+    <a href="#" style="color: black; font-weight: 600;">Women Collection </a>
+  
+      <h1>Women Collection</h1>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <a href="#" style="color: black;">Reviews</a>
+      <br>
+      <h3 style="color: rgb(226, 56, 56);">
+        $99.00
+      </h3><br>
+      <p>New fashion western dress for girls stylish dresses long short knee length skater party wear one piece casual fancy latest frock ladies women simple readymade trendy a line designer latest flare and fit traditional combo formal tops bodycon floral flared lady ethinic wedding full long printed</p>
+      
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <h6>Size:</h6> 
+        <button class="button" id="btn"  style="margin:2px; border: none;" >Small</button>
+        <button class="button"  style="margin:2px ;border: none;">Medium</button>
+        <button class="button"  style="margin:2px ;border: none;">Large</button>
+        <button class="button"  style="margin:2px ;border: none;">X-Large</button>
+      </div>
+      <h6 style="color:rgb(92, 202, 92) ;font-weight: 400;">In stock 300 Items</h6><br>
+      <div class="btn-group" >
+        <button onclick="decrement()" style="background-color: white;height: 50px;width: 30px;" > -</button>
+      <button id="btn1"style="background-color: white; border-left: 0ch;border-right: 0ch;height: 50px;width: 50px;">1</button>
+      <button onclick="increment()" style="background-color: white;height: 50px;width: 30px;">+</button>
+      </div>
+      <button class="button"  style="margin:2px ;border: none; background-color: rgb(226, 56, 56);;color: white; height: 50px;width: 140px;">ADD TO CART</button>
+        <button class="button"  style="margin:2px ;border: none;background-color: rgb(226, 56, 56);;color: white;height: 50px;width: 110px;">BUY NOW</button>
+  <br><br>
+ <div class="container" >
+  <h4 style="margin-bottom: 10px;">
+    <a href="#" onclick="Descrip()" style="color: dimgray;margin-right: 30px;">Description </a>
+    <a href="#"  onclick="ProDetail()" style="color: dimgray; margin-right: 30px;"> Product Details </a>
+   <a href="#" onclick="TabTitle()" style="color: dimgray; "> Tab tilte </a>
+  </h4>
+  <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+<div class="container" id="description">
+  
+  New model dress white frock for women western style
+  <br>
+  <ul style="font-size: 13px;">
+  <li> Length: 74cm</li>
+  <li>Regular fit</li>
+  <li>Notched lapels</li>
+  <li>Twin button front fastening</li>
+  <li>Front patch pockets; chest pocket</li>
+  <li>Please refer to the garment for care instructions.</li>
+  <li>Material: Outer: 50% Linen & 50% Polyamide; Body Lining: 100% Cotton; Lining: 100% Acetate
+  </li>
+  </ul></div>
+ </div>
+ <div class="container" id="productDetail" style="display: none;">
+  BrandAlessi <br>
+  ReferencePD0023 <br>
+  In stock300 Items <br>
+ </div>
+
+ <div class="container" id="tab" style="display: none;">
+  Tab Content <br>
+  <h4 style="text-align:center ;font-weight: 200;"> MTGarments </h4>
+  <h3 style="text-align:center ">PRODUCT SAME CATEGORY </h3>
+  <h5 style="text-align:center;font-weight: 200; ">Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.</h5>
+   </div>
+
+
+<script>
+x=document.getElementById('btn1').innerHTML ;
+function increment() {
+  document.getElementById('btn1').innerHTML = ++x;
+}
+function decrement() {
+ if(x>1){
+  document.getElementById('btn1').innerHTML = --x;
+ }
+}
+
+d=document.getElementById('description');
+p=document.getElementById('productDetail')
+t=document.getElementById('tab');
+    function ProDetail(){
+      p.style.display = 'block';
+      d.style.display = 'none';
+      t.style.display = 'none';
+    }
+    function Descrip(){
+      p.style.display = 'none';
+      d.style.display = 'block';
+      t.style.display = 'none';
+    }
+    function TabTitle(){
+      p.style.display = 'none';
+      d.style.display = 'none';
+      t.style.display = 'block';
+    }
+
+</script>
+</body>
+</html>

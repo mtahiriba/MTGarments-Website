@@ -181,10 +181,10 @@ function kids(){
         container.innerHTML += `<div class="col-md-3 card1">
         <div class="card3">
             <div class="card2">
-                <img src=${card.image1} alt="" width="100%">
+                <a href="./product.html"><img src=${card.image1} alt="" width="100%"></a>
             </div>
             <div class="card-text">
-                <a href="#">${card.text}</a>
+                <a href="./product.html">${card.text}</a>
                 <br>
                 <span>RS: ${card.price}</span> 
             </div>    
@@ -225,10 +225,10 @@ function men(){
         container.innerHTML += `<div class="col-md-3 card1">
         <div class="card3">
             <div class="card2">
-                <img src=${card.image1} alt="" width="100%">
+                <a href="./product.html" ><img src=${card.image1} alt="" width="100%"></a>
             </div>
             <div class="card-text">
-                <a href="#">${card.text}</a>
+                <a href="./product.html">${card.text}</a>
                 <br>
                 <span>RS: ${card.price}</span> 
             </div>    
@@ -269,10 +269,10 @@ function women(){
         container.innerHTML += `<div class="col-md-3 card1">
             <div class="card3">
                 <div class="card2">
-                    <img src=${card.image1} alt="" width="100%">
+                    <a href="./product.html"><img src=${card.image1} alt="" width="100%"></a>
                 </div>
                 <div class="card-text">
-                    <a href="#">${card.text}</a>
+                    <a href="./product.html">${card.text}</a>
                     <br>
                     <span>RS: ${card.price}</span> 
                 </div>    
