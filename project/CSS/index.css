@@ -30,13 +30,13 @@
     color:black
 }
 
-/* .navbar-fix{
+.navbar-fix{
     position: fixed;
     left: 0px;
-    top: 40px;
+    top: 0px;
     width: 100%;
-    background-color:chartreuse;
-} */
+    
+}
 
 .change-color{
     color: rgb(225, 33, 33);
@@ -166,16 +166,16 @@
 }
 
 .cont-height{
-    height: 400px;
+    height: 450px;
 }
 
 .cont-height1{
-    height: 800px;
+    height: 900px;
 }
 
 
 .cont-height2{
-    height: 1200px;
+    height: 1300px;
 }
 
 
