@@ -5,40 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/index.css">
     <style>
-        .map-container{
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        height:0;
+        
+        .main-container{
+          width: 85%;
+          margin: 0px auto;
         }
-        .map-container iframe{
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        position:absolute;
-        }
-
     </style>
     <title>Contact us</title>
 </head>
 <body>
     
-  <div class="container my-4">
+  <div class=" my-4 " style="width: 100%;">
     <!--Google map-->
-<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-  <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-    style="border:0" allowfullscreen></iframe>
-</div>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14126.772346850434!2d68.8191347!3d27.7267609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a57455ae708c7b!2sSukkur%20IBA%20University!5e0!3m2!1sen!2s!4v1660286606788!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <!--Google Maps-->
 
   </div>
 
 
 
-  <div class="container">
+  <div class="main-container">
     <div class="row" >
       <div class="col">
         <div  style="float: right;">
@@ -47,11 +35,12 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="Subject">Subject</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Customer Service">
+                    <input type="email" class="form-control" id="inputPassword4" placeholder="Customer Service">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputPassword4" placeholder="Example@gmail.com">
+                  
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Example@gmail.com">
                   </div>
                 </div>
                 <div class="form-group">
@@ -68,9 +57,9 @@
       <div class="col">
         <div style="float:left;">
             <h1 class="font-weight-bold">Get in touch</h1>
-            <div class="container">
-               <div class="row">
-                 <div class="col">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
                   <p>
                    <h3> LOCATION</h3>
                    Nisar Ahmed Siddiqui
@@ -120,21 +109,53 @@
                           </svg>
                     </a>
                      </div>
-           </div>
+                  </div>
                  
-           </div>
+              </div>
            
        </div>
       </div>
-    </div>    
+    </div>
+    </div>
+
+
+  <div style="clear: both; margin-left: -100px; margin-right: -100px;">
+    <footer class="bg-dark">
+      <div class="discription">
+          <h2><span class="change-color">MT</span><span style="color: white;"> Garments</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede</p>
+      </div>
+      <div class="contacti-info">
+          <a href="./contact.html" style="color: white;"><h3>CONTACT US</h3></a> 
+          <div>
+              <ul>
+                  <li>Address: <span class="contact-text">Sukkur IBA University</span></li>
+                  <li>Phone: <span class="contact-text">03113488858</span></li>
+                  <li>Mail: <span class="contact-text">mtgarments@gmail.com</span></li>
+                  <li>Opening: <span class="contact-text">8:00 AM - 12:00 PM</span></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-line">
+          <hr>
+          <div class="middle-line">
+              <hr>
+          </div>
+          <hr>     
+      </div>
+      <div class="copyright">
+          <span>Copyright © 2022 MTGarments. All Rights Reserved.</span>
+      </div>
+  </footer>
+  </div>  
   
 
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
 
 </body>
 </html>
