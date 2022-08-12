@@ -1,41 +1,48 @@
 womencardlist = [
     {
+        id: '1',
         text: 'Silver Dress',
         price: 7999,
         image1: './images/first1.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '2',
         text: 'Pent Shirt',
         price: 6999,
         image1: './images/second1.jpg',
         image2: './images/second2.jpg'
     },
     {
+        id: '3',
         text: 'Black Dress',
         price: 8999,
         image1: './images/third1.jpg',
         image2: './images/third2.jpg'
     },
     {
+        id: '4',
         text: 'Blue Pents',
         price: 4999,
         image1: './images/four1.jpg',
         image2: './images/four2.jpg'
     },
     {
+        id: '5',
         text: 'Red T-Shirt',
         price: 8599,
         image1: './images/five1.jpg',
         image2: './images/five2.jpg'
     },
     {
+        id: '6',
         text: 'White Dress',
         price: 4499,
         image1: './images/six1.jpg',
         image2: './images/six2.jpg'
     },
     {
+        id: '7',
         text: 'New Brown Dress',
         price: 7799,
         image1: './images/seven1.jpg',
@@ -45,24 +52,28 @@ womencardlist = [
 
 mencardlist = [
     {
+        id: '1',
         text: 'Gray Suit',
         price: 14999,
         image1: './images/menfirst.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '2',
         text: 'Formal Pant',
         price: 2999,
         image1: './images/mensecond.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '3',
         text: 'Black Shirt',
         price: 3999,
         image1: './images/menthird.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '4',
         text: 'Black Trouser',
         price: 5299,
         image1: './images/mensix.jpg',
@@ -70,12 +81,14 @@ mencardlist = [
     }
     ,
     {
+        id: '5',
         text: 'Blue Coat',
         price: 10999,
         image1: './images/menfive.png',
         image2: './images/first2.jpg'
     },
     {
+        id: '6',
         text: 'Formal Shirt',
         price: 10000,
         image1: './images/menfour.jpg',
@@ -86,12 +99,14 @@ mencardlist = [
 
 kidscardlist = [
     {
+        id: '1',
         text: 'Pink Dress',
         price: 7999,
         image1: './images/kids1.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '2',
         text: 'New Black dress',
         price: 4499,
         image1: './images/kids7.jpg',
@@ -99,48 +114,56 @@ kidscardlist = [
     }
     ,
     {
+        id: '3',
         text: 'Blue suit',
         price: 5999,
         image1: './images/kids3.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '4',
         text: 'New Dress',
         price: 5399,
         image1: './images/kids4.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '5',
         text: 'Formal Dress',
         price: 6999,
         image1: './images/kids5.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '6',
         text: 'Formal Dress',
         price: 3299,
         image1: './images/kids6.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '7',
         text: 'Formal Dress',
         price: 3799,
         image1: './images/kids8.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '8',
         text: 'Formal Dress',
         price: 8999,
         image1: './images/kids2.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '9',
         text: 'Formal Dress',
         price: 5899,
         image1: './images/kids9.jpg',
         image2: './images/first2.jpg'
     },
     {
+        id: '10',
         text: 'Formal Dress',
         price: 4999,
         image1: './images/kids10.jpg',
@@ -148,7 +171,6 @@ kidscardlist = [
     }
     
 ]
-
 
 
 let kidscount = kidscardlist.length
@@ -181,16 +203,33 @@ function kids(){
         container.innerHTML += `<div class="col-md-3 card1">
         <div class="card3">
             <div class="card2">
-                <a href="./product.html"><img src=${card.image1} alt="" width="100%"></a>
+                <a href="./product.html"  id=${card.id}><img src=${card.image1} alt="" width="100%"></a>
             </div>
             <div class="card-text">
-                <a href="./product.html">${card.text}</a>
+                <a href="./product.html"  id=${card.id}>${card.text}</a>
                 <br>
                 <span>RS: ${card.price}</span> 
             </div>    
         </div>
         
     </div>`
+
+    ass = document.querySelectorAll('.card3 a')
+    for(let i=0; i<ass.length; i++){
+        ass[i].addEventListener('click', function(event){
+            event.preventDefault()
+            for(let j=0; j<kidscardlist.length; j++){
+                if(kidscardlist[j].id == ass[i].id){
+                    localStorage.setItem("text", kidscardlist[j].text)
+                    localStorage.setItem("image", kidscardlist[j].image1)
+                    localStorage.setItem("price", kidscardlist[j].price)
+                }
+            }
+            window.location = './product.html'
+
+        })
+    }
+
     });
 }
 
@@ -225,16 +264,33 @@ function men(){
         container.innerHTML += `<div class="col-md-3 card1">
         <div class="card3">
             <div class="card2">
-                <a href="./product.html" ><img src=${card.image1} alt="" width="100%"></a>
+                <a href="./product.html"  id=${card.id} ><img src=${card.image1} alt="" width="100%"></a>
             </div>
             <div class="card-text">
-                <a href="./product.html">${card.text}</a>
+                <a href="./product.html"  id=${card.id}>${card.text}</a>
                 <br>
                 <span>RS: ${card.price}</span> 
             </div>    
         </div>
         
     </div>`
+
+    ass = document.querySelectorAll('.card3 a')
+    for(let i=0; i<ass.length; i++){
+        ass[i].addEventListener('click', function(event){
+            event.preventDefault()
+            for(let j=0; j<mencardlist.length; j++){
+                if(mencardlist[j].id == ass[i].id){
+                    localStorage.setItem("text", mencardlist[j].text)
+                    localStorage.setItem("image", mencardlist[j].image1)
+                    localStorage.setItem("price", mencardlist[j].price)
+                }
+            }
+            window.location = './product.html'
+
+        })
+    }
+
     });
 }
 
@@ -269,17 +325,32 @@ function women(){
         container.innerHTML += `<div class="col-md-3 card1">
             <div class="card3">
                 <div class="card2">
-                    <a href="./product.html"><img src=${card.image1} alt="" width="100%"></a>
+                    <a href="./product.html" id=${card.id}><img src=${card.image1} alt="" width="100%"></a>
                 </div>
                 <div class="card-text">
-                    <a href="./product.html">${card.text}</a>
+                    <a href="./product.html"  id=${card.id}>${card.text}</a>
                     <br>
                     <span>RS: ${card.price}</span> 
                 </div>    
             </div>
-            
         </div>`
     });
+
+    ass = document.querySelectorAll('.card3 a')
+    for(let i=0; i<ass.length; i++){
+        ass[i].addEventListener('click', function(event){
+            event.preventDefault()
+            for(let j=0; j<womencardlist.length; j++){
+                if(womencardlist[j].id == ass[i].id){
+                    localStorage.setItem("text", womencardlist[j].text)
+                    localStorage.setItem("image", womencardlist[j].image1)
+                    localStorage.setItem("price", womencardlist[j].price)
+                }
+            }
+            window.location = './product.html'
+
+        })
+    }
 }
 
 let buttons = document.querySelector('.product-cat').children
@@ -292,3 +363,5 @@ women()
 document.querySelector('.MEN-Image').addEventListener('click', men)
 document.querySelector('.WOMEN-Image').addEventListener('click', women)
 document.querySelector('.KIDS-Image').addEventListener('click', kids)
+
+
