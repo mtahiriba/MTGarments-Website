@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="./CSS/popup.css">    
 <style>
 .checked {
   color: orange;
@@ -61,55 +61,82 @@ a:hover{
       </ul>
     </div>
 </nav>
-     <div class="zoomin frame" style=" float: left;margin-left: 30px;margin-top: 10px;">
-      <img src="" id="image1" alt="..." style="display: inline; margin-bottom: 10px; ">
-     </div>
-
-   <div class="container" style="float:right ; width:700px ;margin-right: 130px;margin-top: 10px;">
-    <a href="./index.html" style="color: black;">Home/</a>
-    <a href="#" id="name1" style="color: black; font-weight: 600;">Product Name</a>
-  
-      <h1 id="name2">Product Name</h1>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star"></span>
-      <a href="#" style="color: black;">Reviews</a>
-      <br>
-      <h3 id="price1" style="color: rgb(226, 56, 56);">
-        Product price
-      </h3><br>
-      <p>New fashion western dress for girls stylish dresses long short knee length skater party wear one piece casual fancy latest frock ladies women simple readymade trendy a line designer latest flare and fit traditional combo formal tops bodycon floral flared lady ethinic wedding full long printed</p>
-      
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <h6>Size:</h6> 
-        <button class="button" id="btn"  style="margin:2px; border: none;" >Small</button>
-        <button class="button"  style="margin:2px ;border: none;">Medium</button>
-        <button class="button"  style="margin:2px ;border: none;">Large</button>
-        <button class="button"  style="margin:2px ;border: none;">X-Large</button>
+     
+    <div class="row" style="margin-bottom: 50px;">
+      <div class="col-mid-5"style="margin-bottom: 50px;">
+        <div class="zoomin frame" style=" margin-top: 50px;">
+          <img src="" id="image1" alt="..." style="display: inline; margin-bottom: 50px; ">
+         </div>
       </div>
-      <h6 style="color:rgb(92, 202, 92) ;font-weight: 400;">In stock 300 Items</h6><br>
-      <div class="btn-group" >
-        <button onclick="decrement()" style="background-color: white;height: 50px;width: 30px;" > -</button>
-      <button id="btn1"style="background-color: white; border-left: 0ch;border-right: 0ch;height: 50px;width: 50px;">1</button>
-      <button onclick="increment()" style="background-color: white;height: 50px;width: 30px;">+</button>
+      <div class="col-mid-7">
+        <div class="" style=" width: 810px; margin-top: 50px; padding-left: 30px;">
+          <a href="./index.html" style="color: black;">Home/</a>
+          <a href="#" id="name1" style="color: black; font-weight: 600;">Product Name</a>
+        
+            <h1 id="name2">Product Name</h1>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <a href="#" style="color: black;">Reviews</a>
+            <br>
+            <h3 id="price1" style="color: rgb(226, 56, 56);">
+              Product price
+            </h3><br>
+            <p>New fashion western dress for girls stylish dresses long short knee length skater party wear one piece casual fancy latest frock ladies women simple readymade trendy a line designer latest flare and fit traditional combo formal tops bodycon floral flared lady ethinic wedding full long printed</p>
+            
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <h6>Size:</h6> 
+              <button class="button btn-size" id="btn"  style="margin:2px; border: none;" >Small</button>
+              <button class="button btn-size"  style="margin:2px ;border: none;">Medium</button>
+              <button class="button btn-size"  style="margin:2px ;border: none;">Large</button>
+              <button class="button btn-size"  style="margin:2px ;border: none;">X-Large</button>
+            </div>
+            <h6 style="color:rgb(92, 202, 92) ;font-weight: 400;">In stock 300 Items</h6><br>
+            <div class="btn-group" >
+              <button onclick="decrement()" style="background-color: white;height: 50px;width: 30px;" > -</button>
+            <button id="btn1"style="background-color: white; border-left: 0ch;border-right: 0ch;height: 50px;width: 50px;">1</button>
+            <button onclick="increment()" style="background-color: white;height: 50px;width: 30px;">+</button>
+            </div>
+         
+              <button class="button" id="buy-now" style="margin:2px ;border: none;background-color: rgb(226, 56, 56);;color: white;height: 50px;width: 110px;">BUY NOW</button>
+        <br><br>
+       <div class="container" >
+        <h4 style="margin-bottom: 10px;">
+          <a href="#" onclick="Descrip()" style="color: dimgray;margin-right: 30px;">Description </a>
+          <a href="#"  onclick="ProDetail()" style="color: dimgray; margin-right: 30px;"> Product Details </a>
+        </h4>
+        <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+      <div class="container" id="description" style="margin-top:-px">
+       </div>
+       <div class="container" id="productDetail1" style="display: none;">
+       </div>     
       </div>
-   
-        <button class="button" id="buy-now" style="margin:2px ;border: none;background-color: rgb(226, 56, 56);;color: white;height: 50px;width: 110px;">BUY NOW</button>
-  <br><br>
- <div class="container" >
-  <h4 style="margin-bottom: 10px;">
-    <a href="#" onclick="Descrip()" style="color: dimgray;margin-right: 30px;">Description </a>
-    <a href="#"  onclick="ProDetail()" style="color: dimgray; margin-right: 30px;"> Product Details </a>
-  </h4>
-  <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-<div class="container" id="description" style="margin-top:-px">
- </div>
- <div class="container" id="productDetail1" style="display: none;">
- </div>
+    </div>
+    </div>
+    
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1 style="text-align: center;">Order</h1>
+        <div class="row">
+          <div class="col-5 first-container">
+            <label for="email"><b>Full name</b></label>
+            <input type="text" placeholder="Enter Name" id="full-name">
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter phone Number" id="phone">
+            <label for="psw"><b>Address</b></label>
+            <textarea name="" id="address" cols="30" rows="5" ></textarea>
+          </div>
+          <div class="col-7 slip-tags" id="slip-data">
+          </div>
 
- 
+          <button type="button" class="btn" id="confirm-order">Confirm order</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+      </form>
+    </div>
+
    <div class="navbar-fix">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="nav-text1" href="./index.html"> <span class="change-color">MT</span> Garments</a>
@@ -126,7 +153,7 @@ a:hover{
         </div>
     </nav>    
   </div>
-<div style="margin-left: -100%;margin-top: 100px;margin-right: -24%;">
+<div>
   <footer class="bg-dark">
     <div class="discription">
         <h2><span class="change-color">MT</span><span style="color: white;"> Garments</span></h2>
