@@ -66,7 +66,7 @@ a:hover{
      </div>
 
    <div class="container" style="float:right ; width:700px ;margin-right: 130px;margin-top: 10px;">
-    <a href="#" style="color: black;">Home/</a>
+    <a href="./index.html" style="color: black;">Home/</a>
     <a href="#" id="name1" style="color: black; font-weight: 600;">Product Name</a>
   
       <h1 id="name2">Product Name</h1>
@@ -102,36 +102,14 @@ a:hover{
   <h4 style="margin-bottom: 10px;">
     <a href="#" onclick="Descrip()" style="color: dimgray;margin-right: 30px;">Description </a>
     <a href="#"  onclick="ProDetail()" style="color: dimgray; margin-right: 30px;"> Product Details </a>
-   <a href="#" onclick="TabTitle()" style="color: dimgray; "> Tab tilte </a>
   </h4>
   <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-<div class="container" id="description">
-  
-  New model dress white frock for women western style
-  <br>
-  <ul style="font-size: 13px;">
-  <li> Length: 74cm</li>
-  <li>Regular fit</li>
-  <li>Notched lapels</li>
-  <li>Twin button front fastening</li>
-  <li>Front patch pockets; chest pocket</li>
-  <li>Please refer to the garment for care instructions.</li>
-  <li>Material: Outer: 50% Linen & 50% Polyamide; Body Lining: 100% Cotton; Lining: 100% Acetate
-  </li>
-  </ul></div>
+<div class="container" id="description" style="margin-top:-px">
  </div>
- <div class="container" id="productDetail" style="display: none;">
-  BrandAlessi <br>
-  ReferencePD0023 <br>
-  In stock300 Items <br>
+ <div class="container" id="productDetail1" style="display: none;">
  </div>
 
- <div class="container" id="tab" style="display: none;">
-  Tab Content <br>
-  <h4 style="text-align:center ;font-weight: 200;"> MTGarments </h4>
-  <h3 style="text-align:center ">PRODUCT SAME CATEGORY </h3>
-  <h5 style="text-align:center;font-weight: 200; ">Nullam gravida, dolor ac ultrices lobortis, mi dolor justo.</h5>
-   </div>
+ 
    <div class="navbar-fix">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="nav-text1" href="./index.html"> <span class="change-color">MT</span> Garments</a>
@@ -148,7 +126,7 @@ a:hover{
         </div>
     </nav>    
   </div>
-<div style="margin-left: -94%;margin-top: 100px;margin-right: -21.5%;">
+<div style="margin-left: -100%;margin-top: 100px;margin-right: -24%;">
   <footer class="bg-dark">
     <div class="discription">
         <h2><span class="change-color">MT</span><span style="color: white;"> Garments</span></h2>
@@ -190,22 +168,15 @@ function decrement() {
 }
 
 d=document.getElementById('description');
-p=document.getElementById('productDetail')
-t=document.getElementById('tab');
+p=document.getElementById('productDetail1')
+
     function ProDetail(){
       p.style.display = 'block';
       d.style.display = 'none';
-      t.style.display = 'none';
     }
     function Descrip(){
       p.style.display = 'none';
       d.style.display = 'block';
-      t.style.display = 'none';
-    }
-    function TabTitle(){
-      p.style.display = 'none';
-      d.style.display = 'none';
-      t.style.display = 'block';
     }
 </script>
 <script src="./JS/product.js"></script>
