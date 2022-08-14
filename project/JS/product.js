@@ -4,6 +4,7 @@ image = localStorage.getItem('image')
 price = localStorage.getItem('price')
 descriptions = localStorage.getItem('description')
 productDetails = localStorage.getItem('product')
+Adescriptions = localStorage.getItem('des1')
 shipping_fee = 500
 let product_size = "medium"
 
@@ -21,6 +22,7 @@ document.getElementById('description').innerText=`${descriptions}`;
 document.getElementById('productDetail1').innerText=`${productDetails}`;
 document.getElementById('price1').innerText=`Rs: ${price}`;
 document.getElementById('image1').src=`${image}`;
+document.getElementById('para1').innerText=`${Adescriptions}`;
 
 
 btn_buy = document.getElementById('buy-now')
