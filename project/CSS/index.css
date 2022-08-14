@@ -5,7 +5,16 @@
     /* background-color: #cccccc; */
     background-color:rgb(174, 218, 219);
 }
-
+.flip:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  
+  
 .collapse1{
     margin-left: 50%;
 }
